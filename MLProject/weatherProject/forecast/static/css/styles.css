@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+/* ================= GLOBAL ================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #080808;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* ================= MAIN ================= */
+
+main {
+    width: 1079px;
+    height: 635px;
+    display: flex;
+    border-radius: 25px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+}
+
+/* ================= BACKGROUNDS ================= */
+
+main.clouds { background-image: url('../img/Images/cloudy.jpeg'); }
+main.sunny { background-image: url('../img/Images/sunny.jpeg'); } 
+main.overcast { background-image: url('../img/Images/overcast.jpeg'); } 
+main.mist, main.Mist, main.haze, main.smoke { background-image: url('../img/Images/mist.jpeg'); } 
+main.rain { background-image: url('../img/Images/rain.jpeg'); } 
+main.snow { background-image: url('../img/Images/snow.jpeg'); } 
+main.sleet { background-image: url('../img/Images/sleet.jpeg'); } 
+main.drizzle { background-image: url('../img/Images/drizzle.jpeg'); } 
+main.thunder, main.thundery { background-image: url('../img/Images/thunder.jpeg'); } 
+main.blizzard { background-image: url('../img/Images/blizzard.jpeg'); } 
+main.fog { background-image: url('../img/Images/fog.jpeg'); } 
+main.ice { background-image: url('../img/Images/ice.jpeg'); } 
+main.shower { background-image: url('../img/Images/shower.jpeg'); } 
+main.showers { background-image: url('../img/Images/showers.jpeg'); } 
+main.clear { background-image: url('../img/Images/clear.jpeg'); }
+
+/* ================= LEFT PANEL ================= */
+
+.side-container {
+    width: 250px;
+    padding: 40px;
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(5px);
+    display: flex;
+    flex-direction: column;
+}
+
+/* ================= SEARCH ================= */
+
+.search-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid white;
+    margin-bottom: 55px;
+}
+
+.weather-icon,
+.search-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.geo-input {
+    all: unset;
+    flex: 1;
+    color: white;
+    font-size: 13px;
+}
+
+.geo-input::placeholder {
+    color: rgba(255,255,255,0.6);
+}
+
+.search-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* ================= DAY STATS ================= */
+
+.day-stats {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.day-stats__temperature {
+    font-size: 52px;
+    color: white;
+}
+
+.day-stats__feelslike {
+    font-size: 18px;
+    color: white;
+    margin: 8px 0;
+}
+
+.day-stats_conditions {
+    list-style: none;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.day-stats_conditions li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.day-stats_condition {
+    font-size: 15px;
+    color: white;
+}
+
+.day-stats__condition_text {
+    font-size: 13px;
+    color: white;
+}
+
+/* ================= MAIN PANEL ================= */
+
+.main-container {
+    flex: 1;
+    padding: 60px 75px;
+    background: rgba(0,0,0,0.25);
+    backdrop-filter: blur(5px);
+}
+
+/* ================= TEXT ================= */
+
+.secondary_title {
+    font-size: 13px;
+    color: white;
+    margin-bottom: 16px;
+}
+
+.weather__primary-title {
+    font-size: 38px;
+    color: white;
+    margin-bottom: 16px;
+}
+
+.weather__location {
+    display: flex;
+    align-items: center;
+    margin-bottom: 26px;
+}
+
+.location-icon {
+    margin-right: 8px;
+    color: white;
+}
+
+.weather__location-text {
+    font-size: 13px;
+    color: white;
+}
+
+.weather__primary-stats {
+    font-size: 13px;
+    color: white;
+    width: 400px;
+    margin-bottom: 70px;
+}
+
+/* ================= FORECAST ================= */
+
+.forecast {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    color: white;
+}
+
+.forecast-time {
+    font-size: 14px;
+    color: white;
+}
+
+.forecast-temperature {
+    font-size: 44px;
+    font-weight: 500;
+    color: white;
+    margin: 6px 0;
+    text-shadow: 0 2px 10px rgba(255,255,255,0.25);
+}
+
+.forecastWindText {
+    font-size: 12px;
+    color: white;
+    opacity: 0.85;
+}
+
+/* ================= CHART ================= */
+
+#chart {
+    width: 100%;
+    margin: 55px auto 20px;
+}
