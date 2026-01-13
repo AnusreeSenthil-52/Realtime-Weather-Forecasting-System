@@ -7,12 +7,12 @@ It demonstrates backend development using Django and API integration for real-ti
 
 ## 🚀 Features
 
-* 🌍 Search weather by city name
-* ⏱️ Real-time weather data fetching
-* 🌡️ Displays temperature, humidity, wind speed, and condition
-* 🎨 Dynamic UI based on weather conditions
-* ⚙️ Django-powered backend
-* 🧑‍💻 Developed using VS Code
+* Search weather by city name
+* Real-time weather data fetching
+* Displays temperature, humidity, wind speed, and condition
+* Dynamic UI based on weather conditions
+* Django-powered backend
+* Developed using VS Code
 
 ---
 
